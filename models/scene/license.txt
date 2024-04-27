@@ -1,0 +1,11 @@
+Model Information:
+* title:	Scifi Bridge
+* source:	https://sketchfab.com/3d-models/scifi-bridge-84618ccce2b5433ba96ffac564dc5ebe
+* author:	Low poly 3d Models (https://sketchfab.com/lowpoly3dmodels)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Scifi Bridge" (https://sketchfab.com/3d-models/scifi-bridge-84618ccce2b5433ba96ffac564dc5ebe) by Low poly 3d Models (https://sketchfab.com/lowpoly3dmodels) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
