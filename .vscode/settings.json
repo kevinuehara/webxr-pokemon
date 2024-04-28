@@ -1,11 +1,11 @@
 {
-  "editor.formatOnSave": true,
+    "editor.formatOnSave": true,
     "liveServer.settings.root": "/",
     "liveServer.settings.https": {
-      "enable": true,
-      "cert": "/Users/kevin.uehara/Projects/estudo/Learn-WebXR/certificate/localhost.pem",
-      "key": "/Users/kevin.uehara/Projects/estudo/Learn-WebXR/certificate/localhost.key",
-      "passphrase": "kevin"
+        "enable": true,
+        "cert": "/Users/kevin.uehara/Projects/estudo/Learn-WebXR/certificate/localhost.pem",
+        "key": "/Users/kevin.uehara/Projects/estudo/Learn-WebXR/certificate/localhost.key",
+        "passphrase": "kevin"
     },
     "liveServer.settings.port": 5502
-  }
+}

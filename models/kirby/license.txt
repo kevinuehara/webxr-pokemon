@@ -1,0 +1,8 @@
+Model Information:
+* title:	Kirby Star Allies ⭐
+* source:	https://sketchfab.com/3d-models/kirby-star-allies-a272022bbaa84263ab8eed47b82a0200
+* author:	Garu Games (https://sketchfab.com/garugames)
+
+Model License:
+* license type:	SKETCHFAB Editorial (https://sketchfab.com/licenses)
+* requirements:	Use only in connection with events that are newsworthy or of public interest
