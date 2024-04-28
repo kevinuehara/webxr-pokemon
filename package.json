@@ -1,5 +1,16 @@
-{
+{ 
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "live": "live-server"
+    },
     "devDependencies": {
         "prettier": "3.2.5"
-    }
+    },
+    "dependencies": {
+        "live-server": "^1.2.2"
+    },
+    "keywords": [],
+    "author": "Kevin Uehara",
+    "license": "ISC"
 }
