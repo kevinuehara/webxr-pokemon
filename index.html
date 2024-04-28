@@ -7,6 +7,7 @@
         <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
         <script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://rawgit.com/caseyyee/aframe-ui-widgets/master/dist/ui-widgets.min.js"></script>
 
         <script src="highlight.js"></script>
         <script src="info-panel.js"></script>
@@ -84,19 +85,11 @@
             </a-assets>
 
 
-              <!-- Camera Settings -->
-              <a-entity movement-controls="fly: true">
-                <a-entity
-                    camera
-                    position="0 1.6 0"
-                    look-controls
-                ></a-entity>
-            </a-entity>
+     
 
-            <a-text value="Developed by Kevin Uehara" height="0.5" width="0.5" color="#fff" position="-0.12 1.45 -0.5"></a-text>
+            <a-text value="Developed by Kevin Uehara" height="0.5" width="0.5" color="#000" position="-0.12 1.45 -0.5"></a-text>
 
             <!-- Scene Settings -->
-            <a-entity gltf-model="#scene" position="0 -5 0"></a-entity>
 
             <!-- Background Panels Settings -->
             <a-entity
@@ -136,6 +129,8 @@
                 scale="0.1 0.1 0.1"
             ></a-entity>
 
+            <!-- <a-entity gltf-model="#scene" position="0 -5 0"></a-entity> -->
+            <a-entity environment="preset: japan; dressingAmount: 80; groundTexture: walkernoise" position="0 1 0"></a-entity>
 
             <!-- Hands Settings -->
             <a-entity
