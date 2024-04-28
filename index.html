@@ -16,7 +16,6 @@
     <body>
       
         <a-scene
-        renderer="antialias: true;"
             environment
             cursor="rayOrigin: mouse; fuse: false"
             raycaster="objects: .raycastable"
@@ -90,7 +89,7 @@
 
             <a-entity camera="active: true" look-controls wasd-controls position="0 1.7 0"></a-entity>
 
-            <a-text value="Developed by Kevin Uehara" height="0.5" width="0.5" color="#000" position="-0.12 1.45 -0.5"></a-text>
+            <a-text value="Developed by Kevin Uehara" height="0.5" width="0.5" color="#000" position="-0.12 0.5 -0.5"></a-text>
 
             <!-- Scene Settings -->
 
@@ -120,15 +119,15 @@
             <!-- MODELS -->
             <a-entity
                 gltf-model="#pokemon"
-                position="0.7 1.7 -0.5"
+                position="0.7 0.2 -0.5"
                 rotation="-25 100 -10"
                 scale="0.3 0.3 0.3"
-                animation="property: object3D.position.y; to: 1.5; dir: alternate; dur: 4000; loop: true"
+                animation="property: object3D.position.y; to: 0.4; dir: alternate; dur: 4000; loop: true"
             ></a-entity>
 
             <a-entity
                 gltf-model="#kirby"
-                position="-0.3 1.4 -0.4"
+                position="-0.3 0.2 -0.4"
                 scale="0.1 0.1 0.1"
             ></a-entity>
 
@@ -148,7 +147,7 @@
                 line="color: #118A7E"
             ></a-entity>
 
-            <a-entity id="ui" position="0 1.9 -2.5">
+            <a-entity id="ui" position="0 1 -2.5">
                 <!-- Poster menu -->
                 <a-entity id="menu" highlight>
                     <a-entity
@@ -201,7 +200,7 @@
 
                 <a-entity
                     id="infoPanel"
-                    position="0 0.4 1.3"
+                    position="0 0.2 1.3"
                     info-panel
                     visible="false"
                     scale="0.001 0.001 0.001"
