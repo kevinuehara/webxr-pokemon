@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+    <!-- https://github.com/supermedium/aframe-environment-component -->
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project XR - Pokemon</title>
+        <title>Project WebXR</title>
         <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
         <script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
@@ -14,12 +15,14 @@
     </head>
 
     <body>
-      
         <a-scene
             environment
             cursor="rayOrigin: mouse; fuse: false"
             raycaster="objects: .raycastable"
-            camera look-controls wasd-controls position="0 1.6 0"
+            camera
+            look-controls
+            wasd-controls
+            position="0 1.6 0"
         >
             <a-assets>
                 <a-asset-item
@@ -34,16 +37,18 @@
                     id="kirby"
                     src="models/kirby/kirby.gltf"
                 ></a-asset-item>
+                <a-asset-item
+                    id="pokeball"
+                    src="models/pokeball/scene.gltf"
+                ></a-asset-item>
 
+                <a-asset-item
+                    id="totoro"
+                    src="models/totoro/totoro.gltf"
+                ></a-asset-item>
 
-                <img
-                    id="mononoke"
-                    src="images/mononoke.jpeg"
-                />
-                <img
-                    id="mononokePoster"
-                    src="images/mononoke-poster.jpeg"
-                />
+                <img id="mononoke" src="images/mononoke.jpeg" />
+                <img id="mononokePoster" src="images/mononoke-poster.jpeg" />
                 <img
                     id="ponyo"
                     src="https://cdn.aframe.io/examples/ui/ponyo.jpg"
@@ -86,10 +91,22 @@
                 ></a-mixin>
             </a-assets>
 
+            <a-entity
+                camera="active: true"
+                look-controls
+                universal-controls
+                wasd-controls
+                position="0 1.7 0"
+            ></a-entity>
 
-            <a-entity camera="active: true" look-controls wasd-controls position="0 1.7 0"></a-entity>
-
-            <a-text value="Developed by Kevin Uehara" height="0.5" width="0.5" color="#000" position="-0.12 0.5 -0.5"></a-text>
+            <a-text
+                value="Developed by Kevin Uehara"
+                height="1.5"
+                width="1.5"
+                color="#000"
+                position="-0.4 1.3 -0.5"
+                rotation="13 0 1"
+            ></a-text>
 
             <!-- Scene Settings -->
 
@@ -115,24 +132,42 @@
                 </a-entity>
             </a-entity>
 
-
             <!-- MODELS -->
             <a-entity
                 gltf-model="#pokemon"
-                position="0.7 0.2 -0.5"
+                position="0.7 0.4 -0.5"
                 rotation="-25 100 -10"
                 scale="0.3 0.3 0.3"
-                animation="property: object3D.position.y; to: 0.4; dir: alternate; dur: 4000; loop: true"
+                animation="property: object3D.position.y; to: 0.7; dir: alternate; dur: 4000; loop: true"
             ></a-entity>
 
             <a-entity
                 gltf-model="#kirby"
-                position="-0.3 0.2 -0.4"
+                position="-0.3 0.35 -0.4"
                 scale="0.1 0.1 0.1"
             ></a-entity>
 
+            <a-entity
+                gltf-model="#pokeball"
+                position="1 0.8 1"
+                scale="0.07 0.07 0.1"
+                rotation="0 240 0"
+            ></a-entity>
+
+            <a-entity
+                gltf-model="#totoro"
+                position="-1 0.26 0.5"
+                scale="0.75 0.75 0.75"
+                rotation="0 120 0"
+            ></a-entity>
+
             <!-- <a-entity gltf-model="#scene" position="0 -5 0"></a-entity> -->
-            <a-entity environment="preset: japan; dressingAmount: 50; groundTexture: walkernoise; grid: cross;" position="0 0.2 0"></a-entity>
+            <a-entity
+                environment="preset: japan; dressingAmount: 8;  grid: cross; groundColor: #166534; groundColor2: #15803d ;shadow: true; ground: hills; skyColor: #22d3ee; seed: 6 ;"
+                position="0 0.2 0"
+            ></a-entity>
+
+            <a-light type="point" intensity="1" position="2 4 4"></a-light>
 
             <!-- Hands Settings -->
             <a-entity
@@ -140,6 +175,7 @@
                 laser-controls="hand: left"
                 raycaster="objects: .raycastable"
             ></a-entity>
+
             <a-entity
                 id="rightHand"
                 laser-controls="hand: right"
@@ -186,17 +222,6 @@
                         ></a-entity>
                     </a-entity>
                 </a-entity>
-
-                <a-box
-                    src="#boxTexture"
-                    position="0 0.5 6"
-                    rotation="0 45 45"
-                    scale="1 1 1"
-                    color="#EF2D5E"
-                    animation="property: object3D.position.y; to: 1.2; dir: alternate; dur: 1500; loop: true;"
-                ></a-box>
-
-                <a-light type="point" intensity="1" position="2 4 4"></a-light>
 
                 <a-entity
                     id="infoPanel"
